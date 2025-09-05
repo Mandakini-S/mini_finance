@@ -219,6 +219,15 @@ Once you've made your LinkedIn post:
 
 See you in the **LinkedIn network!** 🎉
 
+## 🛠️  Task: Implement and Deploy a Dynamic Footer
+
+A dynamic footer was implemented and deployed over a 5-day sprint, demonstrating an end-to-end feature delivery process.
+
+* **Day 1 (Implementation):** A static footer was created with HTML/CSS and deployed to an EC2 instance.
+* **Day 2 (Dynamic Content):** JavaScript was added to display the current date automatically.
+* **Day 3 (Polish & Accessibility):** The footer's CSS was refined for better spacing, font size, and to meet WCAG AA contrast standards for readability.
+* **Day 4 (Provenance):** The Git commit hash was added to the footer to track the exact code version deployed.
+* **Day 5 (Agile Process):** The sprint concluded with daily progress documentation in Jira and a final retrospective comment.
 
 
 Assignment Note
