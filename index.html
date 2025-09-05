@@ -10,30 +10,28 @@
 
     <title>Mini Finance Dashboard Template</title>
 
-    <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-
     <link href="css/apexcharts.css" rel="stylesheet">
-
     <link href="css/tooplate-mini-finance.css" rel="stylesheet">
-    <!--
+    
+    <style>
+        .site-footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
 
-Tooplate 2135 Mini Finance
-
-https://www.tooplate.com/view/2135-mini-finance
-
-Bootstrap 5 Dashboard Admin Template
-
--->
-
+        .footer-text {
+            font-size: 14px; /* Slightly smaller font for the footer */
+            color: #4a4a4a;   /* Dark gray for AA contrast on white background */
+            letter-spacing: 0.5px; /* Adds a bit of space between letters for polish */
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -600,7 +598,7 @@ Bootstrap 5 Dashboard Admin Template
                         <div class="row">
 
                             <div class="col-lg-12 col-12">
-                                <p class="copyright-text footer-text">Mini Finance v1.0 — Deployed on 03 Sep 2025 — By
+                                <p class="copyright-text footer-text" id="footer-text">Mini Finance v1.0 — Deployed on 05 Sep 2025 — By
                                     Mandakini Sapkota</p>
                             </div>
 
@@ -612,7 +610,6 @@ Bootstrap 5 Dashboard Admin Template
         </div>
     </div>
 
-    <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/apexcharts.min.js"></script>
@@ -698,12 +695,13 @@ Bootstrap 5 Dashboard Admin Template
         chart.render();
     </script>
     <script>
-        const footer = document.getElementById('footer-text');
+        
+        const footer = document.getElementById('footer-text'); 
         const today = new Date();
         const options = { day: '2-digit', month: 'short', year: 'numeric' };
-        const formattedDate = today.toLocaleDateString('en-GB', options); // e.g., 03 Sep 2025
+        const formattedDate = today.toLocaleDateString('en-GB', options);
 
-        const studentName = "Your Name";
+        const studentName = "Mandakini Sapkota"; 
         footer.textContent = `Mini Finance v1.0 — Deployed on ${formattedDate} — By ${studentName}`;
     </script>
 </body>
