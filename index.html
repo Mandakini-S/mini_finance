@@ -598,8 +598,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 col-12">
-                                <p class="copyright-text footer-text" id="footer-text">Mini Finance v1.0 — Deployed on 05 Sep 2025 — By
-                                    Mandakini Sapkota</p>
+                                <p class="copyright-text footer-text" id="footer-text">Mini Finance v1.0 (rev: af17c1d) — Deployed on 05 Sep, 2025 — By Mandakini Sapkota</p>
                             </div>
 
                         </div>
@@ -702,7 +701,9 @@
         const formattedDate = today.toLocaleDateString('en-GB', options);
 
         const studentName = "Mandakini Sapkota"; 
-        footer.textContent = `Mini Finance v1.0 — Deployed on ${formattedDate} — By ${studentName}`;
+       const commitHash = 'af17c1d';
+
+footer.textContent = `Mini Finance v1.0 (rev: ${commitHash}) — Deployed on ${formattedDate} — By ${studentName}`;
     </script>
 </body>
 
